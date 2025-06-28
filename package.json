@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "node-gyp configure build",
     "start": "node server.js"
@@ -9,11 +9,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Node.js backend with C++ addon",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "node-addon-api": "^8.4.0",
+    "node-addon-api": "^8.4.0"
+  },
+  "devDependencies": {
     "node-gyp": "^11.2.0"
   }
 }
