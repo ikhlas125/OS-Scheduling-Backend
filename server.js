@@ -6,6 +6,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Server is up!");
+});
+
 // FCFS Endpoint only
 app.post("/api/schedule/fcfs", (req, res) => {
   try {
